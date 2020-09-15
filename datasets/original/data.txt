@@ -1,2 +1,2 @@
 The download link for the dataset can be available at this "https://www.kaggle.com/paultimothymooney/breast-histopathology-images".
-Please visit this website and download your dataset in this folder only. '/breast_cancer/dataset/original/the_downloaded_file_from_kaggle'
+Please visit this website and download your dataset in this folder only. '/breast_cancer/datasets/original/the_downloaded_file_from_kaggle'
