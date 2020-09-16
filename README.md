@@ -22,9 +22,9 @@ pip3/pip install matplotlib 3.3.0
 
 ## Result
 - <pre>pre trained vgg 16 model:  training accuracy: 82.96%   validation accuracy: 83.62%  testing accuracy: 83.61%</pre>
-- self trained model_1:      training accuracy: 88.69%   validation accuracy: 88.84%  testing accuracy: ~88%
-- self trained model_4:      training accuracy: 87%      validation accuracy: 87%     testing accuracy: 86%
-- self trained model_2:      training accuracy: 88.67%   validation accuracy: 87.80%  testing accuracy: 87.66%
+- <pre>self trained model_1:      training accuracy: 88.69%   validation accuracy: 88.84%  testing accuracy: ~88%</pre>
+- <pre>self trained model_4:      training accuracy: 87%      validation accuracy: 87%     testing accuracy: 86%</pre>
+- <pre>self trained model_2:      training accuracy: 88.67%   validation accuracy: 87.80%  testing accuracy: 87.66%</pre>
 
 ## Output
 ![Screenshot from 2020-09-14 21-23-47](https://user-images.githubusercontent.com/40459209/93206295-c74aef80-f776-11ea-9cad-821f66192ded.png)
