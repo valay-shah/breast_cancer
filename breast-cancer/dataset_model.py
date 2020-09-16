@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Aug 26 22:34:33 2020
-
-@author: valay
-"""
-
 import shutil
 import os
 import random
@@ -28,13 +20,13 @@ import matplotlib.pyplot as plt
 from keras.utils import np_utils
 
 
-class myCallback(tf.keras.callbacks.Callback):
+class myCallback(tf.keras.callbacks.Callback): # Callback to stop training when it reaches the desired accuracy
     def on_epoch_end(self, epoch, logs={}):
         if(logs.get('accuracy')>0.95):
             print("\nReached 95% accuracy so cancelling training!")
             self.model.stop_training = True
 
-def data_build(source,destination,folder):
+def data_build(source,destination,folder):	# This function is used to build the dataset 
     file_name = []
     for files in os.listdir(source):
         for file_0 in os.listdir(source+'/'+files+'/'+folder):
@@ -60,7 +52,7 @@ def data_build(source,destination,folder):
         shutil.copy2(file_names, destination+'/testing/'+folder+'/'+c[-1])
 
 
-def model_1():
+def model_1():		# This is the first simple model
     model = Sequential()
     model.add(Convolution2D(64,(3,3),input_shape=(50,50,3),activation = 'relu', padding="same"))
     model.add(MaxPooling2D((2,2)))
@@ -77,7 +69,7 @@ def model_1():
     model.add(Dense(2,activation='softmax'))
     return model
 
-def model_2():
+def model_2():		# This is the second model 
     model = Sequential()
     model.add(SeparableConv2D(32, (3,3), padding="same",input_shape=(50,50,3)))
     model.add(Activation("relu"))
@@ -116,7 +108,7 @@ def model_2():
     model.add(Activation("softmax"))
     return model
 
-def model_4():
+def model_4():		# This is the third model
     model = Sequential()
     model.add(Convolution2D(16,(3,3),input_shape=(50,50,3),activation = 'relu', padding="same"))
     model.add(BatchNormalization(axis=-1))
@@ -158,7 +150,7 @@ def model_4():
     return model
     
     
-def train_model(train_path, test_path, val_path, model, callbacks):
+def train_model(train_path, test_path, val_path, model, callbacks):	# This function trains the model
     train_datagen = ImageDataGenerator(
             rescale=1/255.0,
 	          rotation_range=20,
