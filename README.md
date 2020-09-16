@@ -21,10 +21,10 @@ pip3/pip install matplotlib 3.3.0
 - The same python file also contains the code for building the dataset directory and please follow the path '/breast_cancer/datasets/original/' and keep the downloaded kaggle dataset file there otherwise it won't work.
 
 ## Result
-- vgg 16 model:  training accuracy: 82.96%   validation accuracy: 83.62%  testing accuracy: 83.61%
-- model_1:       training accuracy: 88.69%   validation accuracy: 88.84%  testing accuracy: ~88%
-- model_4:       training accuracy: 87%      validation accuracy: 87%     testing accuracy: 86%
-- model_2:       training accuracy: 88.67%   validation accuracy: 87.80%  testing accuracy: 87.66%
+- pre trained vgg 16 model:  training accuracy: 82.96%   validation accuracy: 83.62%  testing accuracy: 83.61%
+- self trained model_1:      training accuracy: 88.69%   validation accuracy: 88.84%  testing accuracy: ~88%
+- self trained model_4:      training accuracy: 87%      validation accuracy: 87%     testing accuracy: 86%
+- self trained model_2:      training accuracy: 88.67%   validation accuracy: 87.80%  testing accuracy: 87.66%
 
 ## Output
 ![Screenshot from 2020-09-14 21-23-47](https://user-images.githubusercontent.com/40459209/93206295-c74aef80-f776-11ea-9cad-821f66192ded.png)
